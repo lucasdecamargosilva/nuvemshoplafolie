@@ -243,17 +243,17 @@
         /* ── Inline button ── */
         /* Espelha o botao "Comprar" da loja (input.js-addtocart.btn-primary):
            Manrope 10px, letter-spacing 2px, uppercase, radius 4px, padding 13px (altura ~38px),
-           largura total. Diferenca pedida: SEM fundo — so a borda amarela (#f1c40f). */
+           largura total. Diferenca pedida: SEM fundo — borda e texto PRETOS (#111). */
         .q-btn-inline-provador {
             display: flex; align-items: center; justify-content: center; gap: 7px;
             width: 100%; padding: 11px 16px;   /* 11*2 + icone 14 + borda 2 = 38px, mesma altura do Comprar */
-            background: transparent; color: #f1c40f;
-            border: 1px solid #f1c40f; border-radius: 4px;
+            background: transparent; color: #111;
+            border: 1px solid #111; border-radius: 4px;
             font-family: 'Manrope', var(--font-body), sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;
             cursor: pointer; transition: background 0.25s, color 0.25s;
             margin-bottom: 10px; box-sizing: border-box; line-height: 1;
         }
-        .q-btn-inline-provador:hover { background: #f1c40f; color: #fff; }
+        .q-btn-inline-provador:hover { background: #111; color: #fff; }
         .q-btn-inline-provador svg { width: 14px; height: 14px; flex-shrink: 0; }
 
         /* ── Modal overlay ── */
