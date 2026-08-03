@@ -246,7 +246,7 @@
            largura total. Diferenca pedida: SEM fundo — so a borda amarela (#f1c40f). */
         .q-btn-inline-provador {
             display: flex; align-items: center; justify-content: center; gap: 7px;
-            width: 100%; padding: 13px 16px;
+            width: 100%; padding: 11px 16px;   /* 11*2 + icone 14 + borda 2 = 38px, mesma altura do Comprar */
             background: transparent; color: #f1c40f;
             border: 1px solid #f1c40f; border-radius: 4px;
             font-family: 'Manrope', var(--font-body), sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;
