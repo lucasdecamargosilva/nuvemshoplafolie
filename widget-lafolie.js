@@ -241,16 +241,19 @@
         @media (min-width: 768px) { .q-btn-trigger-ia { width: 70px; height: 70px; } }
 
         /* ── Inline button ── */
+        /* Espelha o botao "Comprar" da loja (input.js-addtocart.btn-primary):
+           Manrope 10px, letter-spacing 2px, uppercase, radius 4px, padding 13px (altura ~38px),
+           largura total. Diferenca pedida: SEM fundo — so a borda amarela (#f1c40f). */
         .q-btn-inline-provador {
             display: flex; align-items: center; justify-content: center; gap: 7px;
             width: 100%; padding: 13px 16px;
-            background: transparent; color: var(--c-ink);
-            border: 1.5px solid var(--c-ink); border-radius: 10px;
-            font-family: 'Work Sans', var(--font-body), sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase;
+            background: transparent; color: #f1c40f;
+            border: 1px solid #f1c40f; border-radius: 4px;
+            font-family: 'Manrope', var(--font-body), sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;
             cursor: pointer; transition: background 0.25s, color 0.25s;
-            margin-bottom: 10px; box-sizing: border-box;
+            margin-bottom: 10px; box-sizing: border-box; line-height: 1;
         }
-        .q-btn-inline-provador:hover { background: var(--c-ink); color: #fff; }
+        .q-btn-inline-provador:hover { background: #f1c40f; color: #fff; }
         .q-btn-inline-provador svg { width: 14px; height: 14px; flex-shrink: 0; }
 
         /* ── Modal overlay ── */
