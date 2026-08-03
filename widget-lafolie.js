@@ -248,7 +248,7 @@
             display: flex; align-items: center; justify-content: center; gap: 7px;
             width: 100%; padding: 11px 16px;   /* 11*2 + icone 14 + borda 2 = 38px, mesma altura do Comprar */
             background: transparent; color: #111;
-            border: 1px solid #111; border-radius: 4px;
+            border: 1px solid #111; border-radius: 999px;
             font-family: 'Manrope', var(--font-body), sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase;
             cursor: pointer; transition: background 0.25s, color 0.25s;
             margin-bottom: 10px; box-sizing: border-box; line-height: 1;
