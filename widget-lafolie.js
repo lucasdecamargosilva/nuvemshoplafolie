@@ -766,7 +766,7 @@
                     <!-- Persistent header (all steps) -->
                     <div id="q-header-provador">
                         <h1>Provador Virtual</h1>
-                        <img src="https://acdn-us.mitiendanube.com/stores/006/003/202/themes/common/logo-833580808-1745325703-f4a1ede5b660ccff98a10fe6918193861745325703-480-0.webp" alt="LA FOLIE" style="height:46px;width:auto;filter:brightness(0);"/>
+                        <img src="https://acdn-us.mitiendanube.com/stores/006/003/202/themes/common/logo-833580808-1745325703-f4a1ede5b660ccff98a10fe6918193861745325703-480-0.webp" alt="LA FOLIE" style="height:68px;width:auto;filter:brightness(0);"/>
                     </div>
 
                     <!-- Main step -->
