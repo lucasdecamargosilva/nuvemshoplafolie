@@ -1063,6 +1063,20 @@
 
 
     function init() {
+        // --- TRAVA: nao exibir o provador em ACESSORIOS ---
+        // A loja separa "Looks" (roupa) de "Acessorios" (colares, brincos, braceletes,
+        // bolsas, cintos). O menu marca a categoria da pagina atual com a.selected, entao
+        // /acessorios/ no href e' o sinal confiavel. O nome do produto entra como reforco,
+        // caso o menu nao renderize (mobile/lazy).
+        try {
+            var _navAcessorio = Array.prototype.slice
+                .call(document.querySelectorAll('a.nav-list-link.selected, a.selected'))
+                .some(function (a) { return /\/acessorios(\/|$)/i.test(a.getAttribute('href') || ''); });
+            var _nome = ((document.querySelector('h1') || {}).innerText || document.title || '').toLowerCase();
+            var _nomeAcessorio = /\b(colar|colares|brinco|brincos|bracelete|braceletes|pulseira|pulseiras|anel|an[eé]is|bolsa|bolsas|cinto|cintos|echarpe|len[cç]o|chap[eé]u|bon[eé])\b/.test(_nome);
+            if (_navAcessorio || _nomeAcessorio) return;
+        } catch (e) {}
+
         // --- FILTRO DE CATEGORIA (HAT) ---
         const productNameNormalized = (document.querySelector('h1.product__title,.product-single__title,h1')?.innerText || document.title).toUpperCase();
         if (productNameNormalized.includes('HAT')) {
